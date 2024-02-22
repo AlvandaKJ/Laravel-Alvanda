@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/home', [HomeController::class, 'home']);
+
 Route::get('/', function () {
     echo "halo, namaku Alvanda!";
 });
+
 
